@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  font-style: italic;
+  color: rgb(22, 22, 22);
+  background-color: rgb(243, 243, 243);
+}
+/*
+****************
+section-hero
+**************** 
+ */
+
+.hero-img {
+  width: 35rem;
+  height: 38rem;
+  box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1.8rem;
+}
+.hero-img-cell {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+
+.hero {
+  max-width: 120rem;
+  margin: 10rem auto;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 4.4rem;
+}
+.hero-head {
+  font-size: 4.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: serif;
+  margin-top: -2.4rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: 1.1px;
+}
+.hero-discription {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  letter-spacing: 1.3px;
+}
+.hero-button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  background-color: rgb(0, 75, 12);
+  margin-top: 2.8rem;
+  border-radius: 11px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(208, 255, 216, 0.5);
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+.hero-button:hover {
+  background-color: rgb(61, 196, 84);
+  font-weight: 600;
+  color: #fff;
+}
+
+.logo-img {
+  width: 15rem;
+  height: 5rem;
+}
+nav {
+  padding: 4.4rem 4.4rem 0 4.4rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.nav-link {
+  display: flex;
+  gap: 8.6rem;
+  justify-content: space-around;
+}
+
+ul li {
+  list-style: none;
+}
+li a {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  font-size: 1.4rem;
+  list-style: none;
+  text-transform: capitalize;
+  color: rgba(208, 255, 216, 0.5);
+  background-color: rgb(0, 75, 12);
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.1rem;
+  border-radius: 11px;
+  transition: all 0.3s;
+}
+ul {
+  display: flex;
+}
+ul li {
+  position: relative;
+}
+ul li:hover ul {
+  margin-top: 0;
+  opacity: 1;
+}
+ul li ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 3.2rem;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.nav-head {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  font-size: 1.8rem;
+  list-style: none;
+  text-transform: uppercase;
+  color: rgba(208, 255, 216, 0.5);
+  background-color: rgb(0, 75, 12);
+  padding: 0.8rem 1.6rem;
+  border-radius: 11px;
+  transition: all 0.3s;
+}
+nav a:hover {
+  background-color: rgb(61, 196, 84);
+  color: #fff;
+}
+button a {
+  color: rgba(208, 255, 216, 0.5);
+  text-decoration: none;
+}
+button a:hover {
+  color: #fff;
+}
+/*
+****************
+section-testmonials
+**************** 
+ */
+.testmonials {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem;
+}
+.img--big {
+  width: 12rem;
+  height: 14rem;
+}
+
+.testmonial-img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  padding: 5px;
+}
+.testmonial-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: serif;
+  margin-bottom: 0.8rem;
+  padding: 5px;
+}
+.testmonial-discription {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 5px;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+}
+.testmonial-cell {
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(245, 245, 245);
+}
+.test-head {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+}
+/*
+****************
+section-gallary
+**************** 
+ */
+
+.main-gallary {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 4.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+}
+.gallary-img {
+  width: 16rem;
+  height: 15rem;
+  border-radius: 11px;
+
+  transition: all 0.3s;
+}
+.gallary-img:hover {
+  transform: scale(1.5);
+}
+
+.img-cell {
+  overflow: hidden;
+  border-radius: 11px;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+.gallary-head {
+  text-align: center;
+  margin-top: 3.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/*
+****************
+section-cta
+**************** 
+ */
+.cta {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 4.4rem;
+  height: 50rem;
+  margin-top: 4.4rem;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  gap: 4.4rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 119, 35),
+    rgb(105, 172, 92)
+  );
+}
+.cta-img {
+  background-image: linear-gradient(
+      rgba(105, 172, 92, 0.5),
+      rgba(105, 173, 92, 0.4)
+    ),
+    url(img/main-img01.jpg);
+  background-size: cover;
+  border-radius: 11px;
+}
+.cta-cell {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+  margin-top: 5.4rem;
+}
+.cta-place {
+  border: none;
+  padding: 1.2rem 1.6rem;
+  border-radius: 11px;
+  width: 20rem;
+  transition: all 0.3s;
+}
+.cta-place:hover {
+  background-color: rgba(208, 255, 216, 0.5);
+}
+.cta--btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(6, 80, 6);
+  text-transform: capitalize;
+}
+.cta--btn:hover {
+  color: #fff;
+}
+.cta-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(206, 240, 206);
+}
+.cta-subscription {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  color: rgb(206, 240, 206);
+}
+.cta-head {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: rgb(206, 240, 206);
+  margin-bottom: 1.4rem;
+  margin-top: 4.4rem;
+}
+/*
+****************
+section-footer
+**************** 
+ */
+footer {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-top: 2.4rem;
+}
+.footer-head {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.footer-discription {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+.footer-btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  background-color: rgb(0, 75, 12);
+  margin-top: 2.8rem;
+  border-radius: 11px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(208, 255, 216, 0.5);
+  text-transform: capitalize;
+  margin-top: -1.6rem;
+  transition: all 0.3s;
+}
+.footer-btn:hover {
+  background-color: rgb(61, 196, 84);
+  font-weight: 600;
+  color: #fff;
+}
+.footer-space {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 6.4rem;
+}
